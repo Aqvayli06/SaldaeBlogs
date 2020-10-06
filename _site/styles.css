@@ -1,0 +1,38 @@
+.distill-site-nav {
+  color: white;
+  background-color: darkgreen;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: blue;
+}
+
+.distill-site-nav a:hover {
+  color: black;
+}
+
+.distill-site-header {
+height: 60px;
+}
+
+.distill-site-footer {
+All Rights Reserved Saldae Analytics
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+
+<style>
+.distill-blue-outline {
+   background-color: #9ecff7;
+   padding:10px;
+   display: inline-block;
+}
+</style>

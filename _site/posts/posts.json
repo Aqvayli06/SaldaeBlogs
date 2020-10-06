@@ -1,0 +1,87 @@
+[
+  {
+    "path": "posts/2020-05-28-end-to-end-r-based-prod-projects/",
+    "title": "End-to-End R-based Prod ML projects",
+    "description": "A short journey through most useful R features and good practices to make successful productive Machine Learning projects.",
+    "author": [
+      {
+        "name": "Farid Azouaou",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-05-28",
+    "categories": [
+      "MLops",
+      "Data Science"
+    ],
+    "preview": "posts/2020-05-28-end-to-end-r-based-prod-projects/images/R-dashboard.PNG",
+    "last_modified": "2020-06-01T15:19:41+02:00"
+  },
+  {
+    "path": "posts/2020-05-22-renewables-energy-market-in-germany-imbalance-price-estimation/",
+    "title": "Renewables Energy : Imbalance Price Estimation",
+    "description": "Random Forest algorithm for reBAP price Estimation",
+    "author": [
+      {
+        "name": "Farid Azouaou",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-05-22",
+    "categories": [
+      "Use cases"
+    ],
+    "preview": "posts/2020-05-22-renewables-energy-market-in-germany-imbalance-price-estimation/images/renewables.jpg",
+    "last_modified": "2020-05-30T12:05:06+02:00"
+  },
+  {
+    "path": "posts/2020-05-22-shiny-modules/",
+    "title": "Shiny Modules",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Farid Azouaou",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-05-22",
+    "categories": [
+      "shiny"
+    ],
+    "preview": "posts/2020-05-22-shiny-modules/shiny-modules_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2020-05-28T22:54:35+02:00"
+  },
+  {
+    "path": "posts/2020-05-22-the-sharpe-ratio/",
+    "title": "Web-based Entreprise Analytics Dashboards",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Farid Azouaou",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-05-22",
+    "categories": [
+      "stats",
+      "Data Science"
+    ],
+    "preview": "posts/2020-05-22-the-sharpe-ratio/images/saldae_logo.png",
+    "last_modified": "2020-05-28T22:54:45+02:00"
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Saldae Analytics Blogs",
+    "description": "Welcome to our new blog, Saldae Analytics Blog. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Farid Azouaou",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-05-22",
+    "categories": [],
+    "preview": "posts/welcome/welcome_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2020-05-30T22:53:05+02:00"
+  }
+]
