@@ -213,7 +213,7 @@ Secondly, performance directly impacts user experience (UX), and it’s difficul
 
 ## Useful links 
 
-* **rweekly** :[rweekly.org](rweekly.org)
+* **rweekly** : [rweekly.org](https://rweekly.org/)
 * **datacamp** : datacamp ( R track)
 
 
