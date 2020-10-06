@@ -19,369 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Saldae Analytics Blog: About this blog</title>
+  <title>End-to-End R-based Prod ML projects(Part 1)</title>
   
-  <meta property="description" itemprop="description" content="This Blog is continuously maintained by Saldae Analytics &amp; Services"/>
+  <meta property="description" itemprop="description" content="A short journey through most useful R features and good practices to make successful productive Machine Learning projects."/>
   
   
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-10-06"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-10-06"/>
+  <meta name="article:author" content="Saldae Analytics"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Saldae Analytics Blog: About this blog"/>
+  <meta property="og:title" content="End-to-End R-based Prod ML projects(Part 1)"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="This Blog is continuously maintained by Saldae Analytics &amp; Services"/>
+  <meta property="og:description" content="A short journey through most useful R features and good practices to make successful productive Machine Learning projects."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Saldae Analytics Blog"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Saldae Analytics Blog: About this blog"/>
-  <meta property="twitter:description" content="This Blog is continuously maintained by Saldae Analytics &amp; Services"/>
+  <meta property="twitter:title" content="End-to-End R-based Prod ML projects(Part 1)"/>
+  <meta property="twitter:description" content="A short journey through most useful R features and good practices to make successful productive Machine Learning projects."/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this blog"]},{"type":"character","attributes":{},"value":["This Blog is continuously maintained by Saldae Analytics & Services"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["End-to-End R-based Prod ML projects(Part 1)"]},{"type":"character","attributes":{},"value":["A short journey through most useful R features and good practices to make successful productive Machine Learning projects.\n"]},{"type":"character","attributes":{},"value":["images/R-dashboard.PNG"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Saldae Analytics"]},{"type":"character","attributes":{},"value":["https://www.saldaeanalytics.com/"]}]}]},{"type":"character","attributes":{},"value":["10-06-2020"]},{"type":"character","attributes":{},"value":["MLops","Data Science"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["end_to_end_background.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
   
-  <script type="application/javascript">
-  
-    window.headroom_prevent_pin = false;
-  
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-  
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-  
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-  
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["end-to-end-r-based-prod-projects_files/bowser-1.9.3/bowser.min.js","end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/css/crosstalk.css","end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/js/crosstalk.js","end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/js/crosstalk.js.map","end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/js/crosstalk.min.js","end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","end-to-end-r-based-prod-projects_files/datatables-binding-0.13/datatables.js","end-to-end-r-based-prod-projects_files/datatables-css-0.0.0/datatables-crosstalk.css","end-to-end-r-based-prod-projects_files/distill-2.2.21/template.v2.js","end-to-end-r-based-prod-projects_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","end-to-end-r-based-prod-projects_files/dt-core-1.10.20/css/jquery.dataTables.min.css","end-to-end-r-based-prod-projects_files/dt-core-1.10.20/js/jquery.dataTables.min.js","end-to-end-r-based-prod-projects_files/figure-html5/ggplot2-1.png","end-to-end-r-based-prod-projects_files/figure-html5/unnamed-chunk-1-1.png","end-to-end-r-based-prod-projects_files/fonts/open-sans-400.woff","end-to-end-r-based-prod-projects_files/fonts/open-sans-700.woff","end-to-end-r-based-prod-projects_files/htmlwidgets-1.5.1/htmlwidgets.js","end-to-end-r-based-prod-projects_files/images/body-bg.jpg","end-to-end-r-based-prod-projects_files/images/body-bg.png","end-to-end-r-based-prod-projects_files/images/header-bg.jpg","end-to-end-r-based-prod-projects_files/images/highlight-bg.jpg","end-to-end-r-based-prod-projects_files/jquery-1.11.3/jquery.min.js","end-to-end-r-based-prod-projects_files/jquery-1.12.4/jquery.min.js","end-to-end-r-based-prod-projects_files/jquery-1.12.4/LICENSE.txt","end-to-end-r-based-prod-projects_files/style.css","end-to-end-r-based-prod-projects_files/webcomponents-2.0.0/webcomponents.js","end_to_end_background.css","images/background.png","images/background2.png","images/R-dashboard.PNG","images/R-shiny.PNG"]}
   </script>
-  
-  <style type="text/css">
-  
-  /* Theme (user-documented overrideables for nav appearance) */
-  
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .distill-site-nav a:hover {
-    color: white;
-  }
-  
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-  
-  .distill-site-header {
-  
-  }
-  
-  .distill-site-footer {
-  
-  }
-  
-  
-  /* Site Header */
-  
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-  
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-  
-  
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-  
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-  
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-  
-  .distill-site-header .logo {
-    padding: 0;
-  }
-  
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-  
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-  
-  
-  
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-  
-  
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-  
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-  
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-dropdown-active {
-    display: block;
-  }
-  
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-  
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-  
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  /* Site Footer */
-  
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  
-  /* Headroom */
-  
-  d-title {
-    padding-top: 6rem;
-  }
-  
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-  
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-  
-  .headroom--unpinned {
-    top: -100px;
-  }
-  
-  .headroom--pinned {
-    top: 0;
-  }
-  
-  </style>
-  
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -1257,54 +927,22 @@
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="end-to-end-r-based-prod-projects_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+  <script src="end-to-end-r-based-prod-projects_files/jquery-1.12.4/jquery.min.js"></script>
+  <link href="end-to-end-r-based-prod-projects_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="end-to-end-r-based-prod-projects_files/datatables-binding-0.13/datatables.js"></script>
+  <link href="end-to-end-r-based-prod-projects_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="end-to-end-r-based-prod-projects_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="end-to-end-r-based-prod-projects_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+  <link href="end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="end-to-end-r-based-prod-projects_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+  <script src="end-to-end-r-based-prod-projects_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="end-to-end-r-based-prod-projects_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="end-to-end-r-based-prod-projects_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: white;
-    background-color: darkgreen;
-    font-size: 25px;
-    font-weight: 300;
-  }
-  
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: blue;
-  }
-  
-  .distill-site-nav a:hover {
-    color: black;
-  }
-  
-  .distill-site-header {
-  height: 60px;
-  }
-  
-  .distill-site-footer {
-  All Rights Reserved Saldae Analytics
-  }
-  
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-  
-  
-  <style>
-  .distill-blue-outline {
-     background-color: #9ecff7;
-     padding:10px;
-     display: inline-block;
-  }
-  </style>
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <link rel="stylesheet" href="end_to_end_background.css" type="text/css"/>
 
 </head>
 
@@ -1313,75 +951,156 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this blog","description":"This Blog is continuously maintained by Saldae Analytics & Services","authors":[]}
+{"title":"End-to-End R-based Prod ML projects(Part 1)","description":"A short journey through most useful R features and good practices to make successful productive Machine Learning projects.","authors":[{"author":"Saldae Analytics","authorURL":"https://www.saldaeanalytics.com/","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-10-06T00:00:00.000+02:00","citationText":"Analytics, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a class="logo" href="https://www.saldaeanalytics.com/">
-<img src="images/saldae_logo.png"/>
-</a>
-<a href="index.html" class="title">Saldae Analytics Blog</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this blog</h1>
-<p><p>This Blog is continuously maintained by Saldae Analytics &amp; Services</p></p>
+<h1>End-to-End R-based Prod ML projects(Part 1)</h1>
+<p><p>A short journey through most useful R features and good practices to make successful productive Machine Learning projects.</p></p>
 </div>
 
+<div class="d-byline">
+  Saldae Analytics <a href="https://www.saldaeanalytics.com/" class="uri">https://www.saldaeanalytics.com/</a> 
+  
+<br/>10-06-2020
+</div>
 
 <div class="d-article">
-<h2 id="saldae-analytics">Saldae Analytics</h2>
-<p>We are an innovative and value driven start up preaching for Advanced Analytics solutions and consists of a <strong>web based platform</strong> enabling a handy and insightful data exploration, analysis and fully automatized forecasting tool for price, demand, production, sales prediction…<br> Our product is mainly designed for companies heading in the direction of data-driven business transformation.<br></p>
-<p>For more details, please feel free to visit our website and get in touch with us : <br></p>
-<p style="color:green;">
-<a href="https://www.saldaeanalytics.com/" class="uri">https://www.saldaeanalytics.com/</a>
-</p>
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#r-is-only-for-prototyping">R is only for prototyping</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#data-import">Data Import</a></li>
+<li><a href="#data-exploration-and-manipulation-tidyverse-family">Data Exploration and Manipulation : tidyverse family</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#reporting">Reporting</a></li>
+<li><a href="#analytics-r-based-web-apps">Analytics R-based Web-apps</a></li>
+<li><a href="#useful-links">Useful links</a></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<p>My first experience in statistics using <a href="https://www.r-project.org/"><strong>R</strong></a> programming language was 10 years ago, the task was to program an extension of <a href="https://towardsdatascience.com/principal-component-analysis-pca-101-using-r-361f4c53a9ff">PCA</a> <strong>Principal Component Analysis</strong> algorithm . <br> At that time, I was not aware of the existence of <a href="https://rstudio.com">RStudio</a>, so I used the R-shell directly.<br> It was very tideous but since then R did not stop surprising me and remains my favourite programming language.</p>
+<p>In the article below, a brief summary will take you through the most useful features neeeded to transform your “Data-Driven” initial idea into productive project using R features, starting from data upload into reactive reporting.</p>
+<h2 id="r-is-only-for-prototyping">R is only for prototyping</h2>
+<p>Many internet articles speculate about R <em>non-suitability</em> in production, in other words, R is only used for <em>prototyping</em>. <br> In my opinion, it’s not the case, but it requires to take into account some R-specific concerns, such as :</p>
+<ul>
+<li>packages dependencies.</li>
+<li>R is single-threaded</li>
+</ul>
+<p>Once these concerns are handled, R offers an attractive set of packages to use for Data Import, Data Manipulation, Analysis , Machine Learning /Deep Learning, Econometrics . In addition to that user-friendly interactive reporting and dashboarding tools such as :</p>
+<ul>
+<li>Shiny</li>
+<li>Rmarkdown</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>As a preliminary step, you need to have necessary tools installed and make sure that all of them work together.</p>
+<h3 id="r-install-the-recent-version">R : install the recent version ?</h3>
+<p>In order to benefit from the most innovative features and functionalities, it’s always better to have the most recent version of the Software, however on the other hand you need to make sure that this version is <strong>stable</strong> .<br> If you want to deploy the same script on cloud, so make sure to have the same R-version on local and on cloud. <br></p>
+<h3 id="user-freindly-ide-rstudio-or-visual-studio">user-freindly IDE: Rstudio or Visual Studio</h3>
+<p>You can choose from multiple ones , and for me Rstudio remains the well suited , especially if you want to use it for Projects creation ( shiny, rmarkdown websites, CV(vitae), …)</p>
+<h3 id="rtools">Rtools</h3>
+<p>Once your favourite IDE is successfully installed, it is highly recommanded to install a <em>toolbox</em> called <a href="https://cran.r-project.org/bin/windows/Rtools/"><strong>Rtools</strong></a> which plays a role of package builder <br> Make sure to install the compatible version with your R version . Rtools is mainly used to install some special packages basically java built such as “rJava” and “rjson”.</p>
+<h2 id="data-import">Data Import</h2>
+<p><em>Data is the new oil</em> , then lets dig and load them . <br></p>
+<p>There are several packages which enable you to import your raw data, below are the frequently used :</p>
+<ul>
+<li><strong>readr</strong> in order to import data from csv , txt files</li>
+<li><strong>readxls</strong> read data fromm excel files</li>
+<li><strong>odbc</strong> enables to establish connection to your Database and read in data directly.</li>
+</ul>
+<h2 id="data-exploration-and-manipulation-tidyverse-family">Data Exploration and Manipulation : tidyverse family</h2>
+<p>Now we have imported data, the next step is visualize it and get some basic informations. To do so use <em>View</em> command from base library and <em>glimpse</em> command from <strong>dplyr</strong> <br>.</p>
+<p>The following step is to clean and prepare your data, and for that we use a set of packages from <strong>tidyverse</strong></p>
+<ul>
+<li><p><strong>tidyr</strong> : cleaning (remove and replace NAs, complete missing data), reshape my data using <em>tidyr::pivot</em> command</p></li>
+<li><p><strong>dplyr</strong> : preparation and manipulation by adding new variables <em>mutate</em> or aggregating data by groups <em>group_by</em> and <em>summarise</em>. If you have more than one data table you can easily join them using <em>left_join ,right_join</em> r <em>full_join</em></p></li>
+<li><p><strong>stringr</strong> : if by chance you have text in your data, stringr helps you to operate manipulation on your text such symbols cleaning , spaces , undesired characters.</p></li>
+<li><p><strong>lubridate</strong> having a date variable in your data is like a <strong>black horse</strong> not easy to handle but mainly offers huge potential for data exploration and analysis . <br> In order to handle that variable and extract as many as possible of information, I would highly recommand to use lubridate .</p></li>
+<li><p><strong>purrr</strong> : The sexiest feature.</p></li>
+<li><p><strong>ggplot2</strong> you applied all necessary transformation and manipulations and the data is ready . <br> Visualization is a <em>must</em> , it delivers implicit and explicit insights of your data (interdependencies , similarities, correlations,…).<br> ggplot has the complete profile to display all what you need (boxplot, bar-charts, pie-charts, density curve, ..)</p></li>
+</ul>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Saldae_about.png" width="130%" /></p>
+<pre class="r"><code>
+library(ggplot2)
+theme_set(theme_classic())
+
+# Plot
+g &lt;- ggplot(mpg, aes(cty))
+g + geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
+    labs(title=&quot;Density plot&quot;, 
+         subtitle=&quot;City Mileage Grouped by Number of cylinders&quot;,
+         caption=&quot;Source: mpg&quot;,
+         x=&quot;City Mileage&quot;,
+         fill=&quot;# Cylinders&quot;)</code></pre>
+<p><img src="end-to-end-r-based-prod-projects_files/figure-html5/ggplot2-1.png" width="624" /></p>
 </div>
-<!-- ## Contributors -->
-<!-- ### Farid Azouaou -->
-<!-- :::: {style="display: flex;"} -->
-<!-- ::: {.column width="25%" data-latex="{0.05\textwidth}"} -->
-<!-- ```{r, echo = FALSE,out.width = "80%"} -->
-<!-- farid_img_path <- "images/farid_azouaou.jpg" -->
-<!-- knitr::include_graphics(farid_img_path) -->
-<!-- ``` -->
-<!-- ::: -->
-<!-- :::  {.column width="70%" data-latex="{0.4\textwidth}"} -->
-<!-- - **Senior Data Scientist** : I am Data Passionate, no matter which problematic in front of me, the only condition, there is data to handle. -->
-<!-- - Msc Industrial Mathematics  Hamburg University - Germany- -->
-<!-- - Msc Applied Mathematics Operations Research - Bejaia University- Algeria -->
-<!-- ::: -->
-<!-- :::: -->
-<!-- ### Assirem Loualia -->
-<!-- :::: {style="display: flex;"} -->
-<!-- ::: {.column width="25%" data-latex="{0.05\textwidth}"} -->
-<!-- ```{r, , class = "blue-outline",out.width = "80%"} -->
-<!-- farid_img_path <- "images/assirem_loualia.jpg" -->
-<!-- knitr::include_graphics(farid_img_path) -->
-<!-- ``` -->
-<!-- ::: -->
-<!-- :::  {.column width="70%" data-latex="{0.4\textwidth}"} -->
-<!-- - **Senior IT Architect** : -->
-<!-- - Msc Computer Science  Pierre et Marie Curie University - Paris France- -->
-<!-- - Msc Computer Science major: Networks - Bejaia University- Algeria -->
-<!-- ::: -->
-<!-- :::: -->
+<h3 id="pipe-operator">Pipe operator %&gt;%</h3>
+<p>available in magrittr, dplyr, and other R packages, process a data-object using a sequence of operations by passing the result of one step as input for the next step using infix-operators rather than the more typical R method of nested function calls.<br></p>
+<p>Below is an example :</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(dplyr)
+library(lubridate)
+library(DT)
+
+economics %&gt;% mutate( years = year(date))%&gt;% # add new variable years
+  group_by(years)%&gt;%  # group data by years
+  summarise_if(is.numeric, mean, na.rm = TRUE)%&gt;% #aggregate only numerical variables (sum)
+  round(2)%&gt;% # round my data to 2 digits
+  datatable() # display the results using datatable from(DT package)</code></pre>
+<p>preserve38f743ba382fcbc8</p>
+</div>
+<h2 id="analytics">Analytics</h2>
+<h3 id="econometrics">Econometrics</h3>
+<ul>
+<li><strong>forecast</strong></li>
+<li><strong>prophet</strong></li>
+</ul>
+<h3 id="machine-learning-suit-tidymodels">Machine Learning Suit: tidymodels</h3>
+<p>If <em>shallow learning</em> does not work then use <em>deep learning</em> , if else then <em>blame your data</em></p>
+<h4 id="unsupervised-learning">Unsupervised Learning</h4>
+<h4 id="supervised-learning">Supervised Learning</h4>
+<p><strong>Classification</strong></p>
+<p><strong>Regression</strong></p>
+<h4 id="reinforcement-learning">Reinforcement Learning</h4>
+<h3 id="save-your-results-data-model">Save your results : data , model</h3>
+<ul>
+<li><strong>saveRDS</strong></li>
+<li><strong>feather</strong></li>
+</ul>
+<h2 id="reporting">Reporting</h2>
+<h3 id="shiny">Shiny</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/R-shiny.PNG" width="110%" /></p>
+</div>
+<h3 id="rmarkdown">rmarkdown</h3>
+<ul>
+<li><strong>flexdashboard</strong></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/R-dashboard.PNG" width="110%" /></p>
+</div>
+<ul>
+<li><strong>pretty_doc</strong></li>
+</ul>
+<h2 id="analytics-r-based-web-apps">Analytics R-based Web-apps</h2>
+<p>Shiny has proved itself a great tool for communicating data science teams’ results. However, developing a Shiny app for a large scope project that will be used commercially by more than dozens of users is not easy.</p>
+<p>The first challenge is User Interface (UI): the expectations are that the app should not vary from modern web pages.</p>
+<p>Secondly, performance directly impacts user experience (UX), and it’s difficult to maintain efficiency with growing requirements and user base.</p>
+<h3 id="shinyproxy">shinyproxy</h3>
+<h3 id="dockerisation-and-r">Dockerisation and R</h3>
+<h2 id="useful-links">Useful links</h2>
+<ul>
+<li><strong>rweekly</strong> :<a href="rweekly.org">rweekly.org</a></li>
+<li><strong>datacamp</strong> : datacamp ( R track)</li>
+</ul>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

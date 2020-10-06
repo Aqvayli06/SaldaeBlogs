@@ -1,0 +1,33 @@
+---
+title: "Shiny Modules"
+description: |
+  A short description of the post.
+author:
+  - name: Farid Azouaou
+    url: https://www.saldaeanalytics.com/
+date: 05-22-2020
+categories:
+  - shiny
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+```{r}
+plotly::plot_ly(data = mtcars,x = ~cyl,y = ~qsec,color = ~gear,type = "bar")
+```
+
+```{r, layout="l-body-outset", preview=TRUE}
+library(ggplot2)
+ggplot(diamonds, aes(carat, price)) + geom_smooth() +
+  facet_grid(~ cut)
+```
+

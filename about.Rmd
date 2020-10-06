@@ -1,0 +1,72 @@
+---
+title: "About this blog"
+description: |
+  This Blog is continuously maintained by Saldae Analytics & Services
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Saldae Analytics 
+We are an innovative and value driven start up preaching for Advanced Analytics solutions and consists of a  **web based platform** enabling a handy and insightful data exploration, analysis and fully automatized forecasting tool for  price, demand, production, sales prediction...<br>
+Our product is mainly designed for companies heading in the direction of data-driven business transformation.<br>
+
+For more details, please feel free to visit our website and get in touch with us : <br>
+
+<p style="color:green;">https://www.saldaeanalytics.com/</p>
+
+
+
+```{r rShiny, , class="blue-outline", out.width= "130%"}
+shiny_img_path <- "images/Saldae_about.png"
+knitr::include_graphics(shiny_img_path)
+
+```
+
+
+<!-- ## Contributors -->
+
+<!-- ### Farid Azouaou -->
+
+<!-- :::: {style="display: flex;"} -->
+
+<!-- ::: {.column width="25%" data-latex="{0.05\textwidth}"} -->
+
+<!-- ```{r, echo = FALSE,out.width = "80%"} -->
+<!-- farid_img_path <- "images/farid_azouaou.jpg" -->
+<!-- knitr::include_graphics(farid_img_path) -->
+
+<!-- ``` -->
+
+<!-- ::: -->
+
+<!-- :::  {.column width="70%" data-latex="{0.4\textwidth}"} -->
+<!-- - **Senior Data Scientist** : I am Data Passionate, no matter which problematic in front of me, the only condition, there is data to handle. -->
+
+<!-- - Msc Industrial Mathematics  Hamburg University - Germany- -->
+<!-- - Msc Applied Mathematics Operations Research - Bejaia University- Algeria -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ### Assirem Loualia -->
+
+<!-- :::: {style="display: flex;"} -->
+
+<!-- ::: {.column width="25%" data-latex="{0.05\textwidth}"} -->
+
+<!-- ```{r, , class = "blue-outline",out.width = "80%"} -->
+<!-- farid_img_path <- "images/assirem_loualia.jpg" -->
+<!-- knitr::include_graphics(farid_img_path) -->
+
+<!-- ``` -->
+
+<!-- ::: -->
+
+<!-- :::  {.column width="70%" data-latex="{0.4\textwidth}"} -->
+<!-- - **Senior IT Architect** : -->
+
+<!-- - Msc Computer Science  Pierre et Marie Curie University - Paris France- -->
+<!-- - Msc Computer Science major: Networks - Bejaia University- Algeria -->
+<!-- ::: -->
+<!-- :::: -->

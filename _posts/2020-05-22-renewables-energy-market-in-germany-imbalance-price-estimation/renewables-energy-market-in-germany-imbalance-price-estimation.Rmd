@@ -1,0 +1,54 @@
+---
+title: "Renewables Energy : Imbalance Price Estimation"
+description: |
+  Random Forest algorithm for reBAP price Estimation
+author:
+  - name: Saldae Analytics
+    url: https://www.saldaeanalytics.com/
+preview: images/renewables.jpg
+date: 10-06-2020
+categories:
+  - Use cases
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Renewable Energy: German Market 
+The unique German imbalance price (reBAP) is the settlement price for all Balancing Responsible Parties (BRP) in Germany. Next to this purpose the reBAP has a fundamental function for the German Electricity Market. It is up the reBAP to set correct incentives towards BRPs to close open positions in wholesale markets before TSOs need to acivate balancing energy to balance open positions. This is creating liquid markets and efficient allocation of generation and load.[(1)](https://www.regelleistung.net/ext/static/rebap?lang=en) <br>
+
+For that purpose TSOs further develop imbalance pricing according to the Guideline on Electricity Balancing (GL EB) as well as regulation set out by the national regulatory authority (Bundesnetzagentur) to unite EU regulation with the special role of the reBAP for the German Electricity Market.[(1)](https://www.regelleistung.net/ext/static/rebap?lang=en)
+
+
+
+
+## Imbalance Price (reBAP)
+
+reBAP is quarterly hour standardized price for balance energy calculated based on the application costs for control power divided by the balance of control power relevant for settlement.
+A positive sign corresponds to the purchase of positive balance energy. A negative sign corresponds to the purchase of negative balance energy (discharge of surplus energy)
+
+* is an symmetric, quarter hourly price,
+* can have a positive and negative sign,
+* is based on costs of activated balancing energy and adds further components to ensure the incentive function.
+
+## Strong Volatility and different influecing factors:
+
+Heavily driven by instant energy demand and supply volatilities, in addition to several factors which makes the estimation very complex.
+reBAP is a vital element for all trading strategies in energy market, however the final price is published 1 month and half after.
+
+## Price Estimation using Machine Learning: 
+
+Our Approach relies on Machine Learning using multiple data source and information such as:
+
+- Control reserves data.
+
+- Merit Order information.
+
+### Modeling and Features Engineering : 
+
+
+

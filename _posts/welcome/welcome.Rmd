@@ -1,0 +1,46 @@
+---
+title: "Welcome to Saldae Analytics Blogs"
+description: |
+  Welcome to our new blog, Saldae Analytics Blog. We hope you enjoy 
+  reading what we have to say!
+author:
+  - name: Farid Azouaou 
+    url: https://www.saldaeanalytics.com/
+    affiliation: Saldae Analytics
+    affiliation_url: https://www.saldaeanalytics.com/#contact
+date: 05-22-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+```{r}
+options(scipen=999)  # turn-off scientific notation like 1e+48
+library(ggplot2)
+theme_set(theme_bw())  # pre-set the bw theme.
+data("midwest", package = "ggplot2")
+
+# Scatterplot
+gg <- ggplot(midwest, aes(x=area, y=poptotal)) + 
+  geom_point(aes(col=state, size=popdensity)) + 
+  geom_smooth(method="loess", se=F) + 
+  xlim(c(0, 0.1)) + 
+  ylim(c(0, 500000)) + 
+  labs(subtitle="Area Vs Population", 
+       y="Population", 
+       x="Area", 
+       title="Scatterplot", 
+       caption = "Source: midwest")
+
+plot(gg)
+```
+
+

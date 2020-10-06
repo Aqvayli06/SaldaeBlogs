@@ -1,23 +1,5 @@
 [
   {
-    "path": "posts/2020-05-28-end-to-end-r-based-prod-projects/",
-    "title": "End-to-End R-based Prod ML projects",
-    "description": "A short journey through most useful R features and good practices to make successful productive Machine Learning projects.",
-    "author": [
-      {
-        "name": "Farid Azouaou",
-        "url": "https://www.saldaeanalytics.com/"
-      }
-    ],
-    "date": "2020-05-28",
-    "categories": [
-      "MLops",
-      "Data Science"
-    ],
-    "preview": "posts/2020-05-28-end-to-end-r-based-prod-projects/images/R-dashboard.PNG",
-    "last_modified": "2020-10-06T18:01:30+02:00"
-  },
-  {
     "path": "posts/2020-05-22-renewables-energy-market-in-germany-imbalance-price-estimation/",
     "title": "Renewables Energy : Imbalance Price Estimation",
     "description": "Random Forest algorithm for reBAP price Estimation",
@@ -27,12 +9,30 @@
         "url": "https://www.saldaeanalytics.com/"
       }
     ],
-    "date": "2020-05-22",
+    "date": "2020-10-06",
     "categories": [
       "Use cases"
     ],
     "preview": "posts/2020-05-22-renewables-energy-market-in-germany-imbalance-price-estimation/images/renewables.jpg",
-    "last_modified": "2020-10-06T18:01:08+02:00"
+    "last_modified": "2020-10-06T18:28:04+02:00"
+  },
+  {
+    "path": "posts/2020-05-28-end-to-end-r-based-prod-projects/",
+    "title": "End-to-End R-based Prod ML projects(Part 1)",
+    "description": "A short journey through most useful R features and good practices to make successful productive Machine Learning projects.",
+    "author": [
+      {
+        "name": "Saldae Analytics",
+        "url": "https://www.saldaeanalytics.com/"
+      }
+    ],
+    "date": "2020-10-06",
+    "categories": [
+      "MLops",
+      "Data Science"
+    ],
+    "preview": "posts/2020-05-28-end-to-end-r-based-prod-projects/images/R-dashboard.PNG",
+    "last_modified": "2020-10-06T18:51:09+02:00"
   },
   {
     "path": "posts/2020-05-22-shiny-modules/",

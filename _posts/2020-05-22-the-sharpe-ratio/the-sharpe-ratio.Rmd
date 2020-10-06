@@ -1,0 +1,23 @@
+---
+title: "Web-based Entreprise Analytics Dashboards"
+description: |
+  A short description of the post.
+preview: images/saldae_logo.png
+author:
+  - name: Farid Azouaou
+    url: https://www.saldaeanalytics.com/
+date: 05-22-2020
+categories:
+  - stats
+  - Data Science
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Saldae Analytics offers a variety of Analytics services, on of them are web-based Entreprise Dashabords to help to go through "Data-Driven Decision Making Paradigm"
+You want to know further :  <https://www.saldaeanalytics.com/>

@@ -1,0 +1,230 @@
+---
+title: "End-to-End R-based Prod ML projects(Part 1)"
+description: |
+  A short journey through most useful R features and good practices to make successful productive Machine Learning projects.
+preview: images/R-dashboard.PNG
+author:
+  - name: Saldae Analytics
+    url: https://www.saldaeanalytics.com/
+date: 10-06-2020
+categories:
+  - MLops
+  - Data Science
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+    self_contained: false
+    css: end_to_end_background.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+  My first experience in statistics using [**R**](https://www.r-project.org/)  programming language was 10 years ago, the task was to program an extension of  [PCA](https://towardsdatascience.com/principal-component-analysis-pca-101-using-r-361f4c53a9ff) __Principal Component Analysis__ algorithm . <br>
+  At that time, I was not aware of the existence of [RStudio](https://rstudio.com), so I used the R-shell directly.<br>
+It was very tideous but since then R did not stop surprising me and remains my favourite programming language. 
+
+  In the article below, a brief summary will take you through the most useful features neeeded to transform your "Data-Driven" initial idea into productive project using R features, starting from data upload into reactive reporting. 
+
+## R is only for prototyping
+
+  Many internet articles speculate  about R *non-suitability* in production, in other words, R is only used for *prototyping*. <br> 
+  In my opinion, it's not the case, but it requires to take into account some R-specific concerns, such as :
+  
+*  packages dependencies. 
+*  R is single-threaded 
+
+  Once these concerns are handled, R offers an attractive set of packages to use for Data Import, Data Manipulation, Analysis , Machine Learning /Deep Learning, Econometrics . 
+In addition to that user-friendly interactive reporting and dashboarding tools such as :
+
+* Shiny 
+* Rmarkdown 
+
+## Prerequisites
+
+  As a preliminary step, you need to have necessary tools installed and make sure that all of them work together. 
+  
+### R : install the recent version ? 
+
+  In order to benefit from the most innovative features and functionalities, it's always better to have the most recent version of the Software, however on the other hand you need to make sure that this version is **stable** .<br>
+  If you want to deploy the same script on cloud, so make sure to have the same R-version on local and on cloud. <br>
+  
+  
+
+### user-freindly IDE: Rstudio or Visual Studio
+
+You can choose from multiple ones , and for me Rstudio remains the well suited , especially if you want to use it for Projects creation ( shiny, rmarkdown websites, CV(vitae), ...)
+
+### Rtools
+
+  Once your favourite IDE is successfully installed, it is highly recommanded to install  a *toolbox* called [**Rtools**](https://cran.r-project.org/bin/windows/Rtools/) which plays a role of package builder <br>
+  Make sure to install the compatible version with your R version .
+  Rtools is mainly used to install some special packages basically java built such as "rJava" and "rjson".
+
+## Data Import 
+
+*Data is the new oil* , then lets dig and load them . <br>
+
+There are several packages which enable you to import your raw data, below are the frequently used : 
+
+- **readr** in order to import data from csv , txt files 
+- **readxls** read data fromm excel files
+- **odbc**  enables to establish connection to your Database and read in data directly.
+
+
+## Data Exploration and Manipulation : tidyverse family  
+
+Now we have imported data, the next step is visualize it and get some basic informations. 
+To do so use *View* command from base library and *glimpse* command from 
+**dplyr** <br>.
+
+The following step is to clean and prepare your data, and for that we use a set of packages from **tidyverse**
+
+-  **tidyr** : cleaning (remove and replace NAs, complete missing data), reshape my data using *tidyr::pivot* command
+-  **dplyr** : preparation and manipulation by adding new variables *mutate* or aggregating data by groups *group_by* and *summarise*. 
+If you have more than one data table you can easily join them using *left_join ,right_join* r *full_join*
+
+-  **stringr** : if by chance you have text in your data, stringr helps you to operate manipulation on your text such symbols cleaning , spaces , undesired characters. 
+
+
+- **lubridate** having a date variable in your data is like a **black horse** not easy to handle but mainly offers huge potential for data exploration and analysis . <br>
+In order to handle that variable and extract as many as possible of information, I would highly recommand to use lubridate . 
+
+
+
+
+-  **purrr**   : The sexiest feature. 
+
+-  **ggplot2** you applied all necessary transformation and manipulations and the data is ready . <br>
+Visualization is a *must* , it delivers implicit and explicit insights of your data (interdependencies , similarities, correlations,...).<br>
+ggplot has the  complete profile to display all what you need (boxplot, bar-charts, pie-charts, density curve, ..)
+
+```{r ggplot2, echo=TRUE}
+library(ggplot2)
+theme_set(theme_classic())
+
+# Plot
+g <- ggplot(mpg, aes(cty))
+g + geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
+    labs(title="Density plot", 
+         subtitle="City Mileage Grouped by Number of cylinders",
+         caption="Source: mpg",
+         x="City Mileage",
+         fill="# Cylinders")
+```
+
+
+
+### Pipe operator %>%
+
+  available in magrittr, dplyr, and other R packages, process a data-object using a sequence of operations by passing the result of one step as input for the next step using infix-operators rather than the more typical R method of nested function calls.<br>
+  
+Below is an example :
+
+```{r pipe_operator, echo=TRUE}
+library(dplyr)
+library(lubridate)
+library(DT)
+
+economics %>% mutate( years = year(date))%>% # add new variable years
+  group_by(years)%>%  # group data by years
+  summarise_if(is.numeric, mean, na.rm = TRUE)%>% #aggregate only numerical variables (sum)
+  round(2)%>% # round my data to 2 digits
+  datatable() # display the results using datatable from(DT package)
+
+```
+
+  
+## Analytics
+
+### Econometrics 
+
+- **forecast**
+- **prophet**
+
+### Machine Learning Suit: tidymodels
+If *shallow learning* does not work then use *deep learning* , if else then *blame your data*
+
+
+#### Unsupervised Learning
+
+
+
+#### Supervised Learning
+
+**Classification**
+
+
+**Regression**
+
+
+
+#### Reinforcement Learning
+
+
+
+### Save your results : data , model
+
+* **saveRDS**
+* **feather**
+
+## Reporting 
+
+### Shiny
+
+```{r rShiny, , class="blue-outline", out.width= "110%"}
+shiny_img_path <- "images/R-shiny.PNG"
+knitr::include_graphics(shiny_img_path)
+
+```
+
+
+### rmarkdown 
+
+- **flexdashboard**
+
+
+```{r flexdashboard, , class="blue-outline", out.width= "110%", paged.print=TRUE}
+farid_img_path <- "images/R-dashboard.PNG"
+knitr::include_graphics(farid_img_path)
+
+```
+
+- **pretty_doc**
+
+
+## Analytics R-based  Web-apps 
+
+Shiny has proved itself a great tool for communicating data science teams’ results. However, developing a Shiny app for a large scope project that will be used commercially by more than dozens of users is not easy.
+
+The first challenge is User Interface (UI): the expectations are that the app should not vary from modern web pages.
+
+Secondly, performance directly impacts user experience (UX), and it’s difficult to maintain efficiency with growing requirements and user base.
+
+
+### shinyproxy  
+
+### Dockerisation and R 
+
+
+
+
+## Useful links 
+
+* **rweekly** :[rweekly.org](rweekly.org)
+* **datacamp** : datacamp ( R track)
+
+
+
+
+
+
+
+
+
+
+
+
+

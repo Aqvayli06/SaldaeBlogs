@@ -1,0 +1,21 @@
+name: "SaldaeBlogs"
+title: "Saldae Analytics Blog"
+description: |
+  Saldae Analytics : Inspriring Solutions using R/Shiny  to democratize Artificial Intelligence
+output_dir: "_site"
+navbar:
+  logo:
+    image: images/saldae_logo.png
+    favicon: images/saldae_logo.png
+    href: https://www.saldaeanalytics.com/
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About Us"
+      href: about.html
+output:
+  distill::distill_article:
+    css: styles.css
+collections:
+  posts:
+    citations: false
