@@ -1,5 +1,5 @@
 ---
-title: "End-to-End R-based Prod ML projects(Part 1)"
+title: "End-to-End R-based prod Analytics projects(Part 1)"
 description: |
   A short journey through most useful R features and good practices to make successful productive Machine Learning projects.
 preview: images/R-dashboard.PNG
@@ -170,9 +170,17 @@ If *shallow learning* does not work then use *deep learning* , if else then *bla
 * **saveRDS**
 * **feather**
 
-## Reporting 
+## Smart Dashboarding and Reporting 
 
 ### Shiny
+
+
+Shiny has proved itself a great tool for communicating data science teams’ results. However, developing a Shiny app for a large scope project that will be used commercially by more than dozens of users is not easy.
+
+The first challenge is User Interface (UI): the expectations are that the app should not vary from modern web pages.
+
+Secondly, performance directly impacts user experience (UX), and it’s difficult to maintain efficiency with growing requirements and user base.
+
 
 ```{r rShiny, , class="blue-outline", out.width= "110%"}
 shiny_img_path <- "images/R-shiny.PNG"
@@ -193,20 +201,6 @@ knitr::include_graphics(farid_img_path)
 ```
 
 - **pretty_doc**
-
-
-## Analytics R-based  Web-apps 
-
-Shiny has proved itself a great tool for communicating data science teams’ results. However, developing a Shiny app for a large scope project that will be used commercially by more than dozens of users is not easy.
-
-The first challenge is User Interface (UI): the expectations are that the app should not vary from modern web pages.
-
-Secondly, performance directly impacts user experience (UX), and it’s difficult to maintain efficiency with growing requirements and user base.
-
-
-### shinyproxy  
-
-### Dockerisation and R 
 
 
 

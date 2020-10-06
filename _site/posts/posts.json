@@ -18,7 +18,7 @@
   },
   {
     "path": "posts/2020-05-28-end-to-end-r-based-prod-projects/",
-    "title": "End-to-End R-based Prod ML projects(Part 1)",
+    "title": "End-to-End R-based prod Analytics projects(Part 1)",
     "description": "A short journey through most useful R features and good practices to make successful productive Machine Learning projects.",
     "author": [
       {
@@ -32,7 +32,7 @@
       "Data Science"
     ],
     "preview": "posts/2020-05-28-end-to-end-r-based-prod-projects/images/R-dashboard.PNG",
-    "last_modified": "2020-10-06T19:21:41+02:00"
+    "last_modified": "2020-10-06T20:33:56+02:00"
   },
   {
     "path": "posts/2020-05-22-shiny-modules/",
