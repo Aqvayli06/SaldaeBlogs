@@ -8,6 +8,7 @@ navbar:
     image: images/saldae_logo.png
     favicon: images/saldae_logo.png
     href: https://www.saldaeanalytics.com/
+  search: true
   right:
     - text: "Home"
       href: index.html

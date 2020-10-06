@@ -4,7 +4,7 @@ description: |
   Random Forest algorithm for reBAP price Estimation
 author:
   - name: Saldae Analytics
-    url: https://www.saldaeanalytics.com/
+     url: https://www.saldaeanalytics.com/
 preview: images/renewables.jpg
 date: 10-06-2020
 categories:

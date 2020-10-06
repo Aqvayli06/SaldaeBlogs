@@ -6,7 +6,7 @@
     "author": [
       {
         "name": "Saldae Analytics",
-        "url": "https://www.saldaeanalytics.com/"
+        "url": {}
       }
     ],
     "date": "2020-10-06",
@@ -14,7 +14,7 @@
       "Use cases"
     ],
     "preview": "posts/2020-05-22-renewables-energy-market-in-germany-imbalance-price-estimation/images/renewables.jpg",
-    "last_modified": "2020-10-06T18:28:04+02:00"
+    "last_modified": "2020-10-06T19:55:01+02:00"
   },
   {
     "path": "posts/2020-05-28-end-to-end-r-based-prod-projects/",
