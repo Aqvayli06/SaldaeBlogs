@@ -25,6 +25,23 @@ knitr::include_graphics(shiny_img_path)
 ```
 
 
+<form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
+  </p>
+  <p>
+    <input type="hidden" name="utf8" value="✓">
+     <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
+  </p>
+</form>
+
+
 <!-- ## Contributors -->
 
 <!-- ### Farid Azouaou -->
