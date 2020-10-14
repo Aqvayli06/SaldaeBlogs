@@ -1,45 +1,53 @@
 ---
 title: "About this blog"
 description: |
-  This Blog is continuously maintained by Saldae Analytics & Services
+  This Blog is continuously maintained by [Saldae Analytics & Services](https://www.saldaeanalytics.com/#)
+output:
+  distill::distill_article:
+    css: contact_form.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
 ## Saldae Analytics 
-We are an innovative and value driven start up preaching for Advanced Analytics solutions and consists of a  **web based platform** enabling a handy and insightful data exploration, analysis and fully automatized forecasting tool for  price, demand, production, sales prediction...<br>
+We are an innovative and value driven start up preaching for Advanced Analytics solutions and consists of a  **web based platform** enabling a handy and insightful: 
+
+* Data exploration
+* Data analysis 
+* Anomaly Detection
+* Forecasting tool(fully automatized)
+
+<br>
 Our product is mainly designed for companies heading in the direction of data-driven business transformation.<br>
+
+The fields of application are diverse : 
+
+*  Prices prediction (mobility,...) 
+*  Electricity demand (Energy)
+*  Supply Chain and production(retail , E-commerce)
+*  Sales prediction
+
 
 For more details, please feel free to visit our website and get in touch with us : <br>
 
-<p style="color:green;">https://www.saldaeanalytics.com/</p>
+<p style="color:green;">https://www.saldaeanalytics.com/#</p>
 
 
 
-```{r rShiny, , class="blue-outline", out.width= "130%"}
-shiny_img_path <- "images/Saldae_about.png"
-knitr::include_graphics(shiny_img_path)
+```{r rShiny}
+saldae_about_imgs <- list.files(path="images/",pattern = "Saldae_about",full.names = TRUE)
+#knitr::include_graphics(shiny_img_path)
 
+slick <- slickR::slickR(obj=saldae_about_imgs,
+                        width = "100%",
+                        height = "90")
+
+slick + slickR::settings(dots = TRUE, autoplay = TRUE, autoplaySpeed = 5000)
 ```
 
-
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
-  </p>
-  <p>
-    <input type="hidden" name="utf8" value="✓">
-     <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
-  </p>
-</form>
 
 
 <!-- ## Contributors -->

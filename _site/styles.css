@@ -1,17 +1,21 @@
+.distill-site-body {
+  background-color: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
 .distill-site-nav {
   color: white;
-  background-color: darkgreen;
+  background-color: #333;
   font-size: 25px;
   font-weight: 300;
 }
 
-<style type="text/css">
-.distill-main-container {
+.distill-site-main-container {
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
-</style>
 
 
 .distill-site-nav a {
@@ -20,12 +24,23 @@
 }
 
 .distill-site-nav a:hover {
-  color: black;
+  color: #18d26e;
+  transition: 0.5s;
 }
 
 .distill-site-header {
 height: 60px;
 }
+
+.distill-site-title {
+  margin-left: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+
+
 
 .distill-site-footer {
 All Rights Reserved Saldae Analytics
@@ -36,12 +51,3 @@ All Rights Reserved Saldae Analytics
     display: none;
   }
 }
-
-
-<style>
-.distill-blue-outline {
-   background-color: #9ecff7;
-   padding:10px;
-   display: inline-block;
-}
-</style>

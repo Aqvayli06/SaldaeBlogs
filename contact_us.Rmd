@@ -1,25 +1,31 @@
 ---
 title: "Contact Us"
-author: "Farid Azouaou"
-date: "12/10/2020"
-output: html_document
+output:
+  distill::distill_article:
+    css: contact_form.css
+layout: true
+background-image: url("/images/backgrounds_time.jpg")
+background-size: cover
 ---
 
-<form action="https://formspree.io/your@email.com" method="POST">
-  <label for="name">Your name: </label>
-  <input type="text" name="name" required="required" placeholder="here"><br>
-  <label for="email">Your email: </label>
-  <input type="email" name="_replyto" required="required" placeholder="here"><br>
-  <label for="message">Your message:</label><br>
-  <textarea rows="4" name="message" id="message" required="required" class="form-control" placeholder="I can't wait to read this!"></textarea>
-  <input type="hidden" name="_next" value="/html/thanks.html" />
-  <input type="submit" value="Send" name="submit" class="btn btn-primary btn-outline">
-  <input type="hidden" name="_subject" value="Website message" />
-  <input type="text" name="_gotcha" style="display:none" />
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+<form class="form" name="contact" method="POST"  netlify-honeypot="bot-field" data-netlify="true">
+  <h21>CONTACT US</h21>
+  <p type="Name:"><input placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input placeholder="Let us know how to contact you back.." ></input></p>
+  <p type="Message:"><input placeholder="What would you like to tell us.." required="required" ></input></p>
+  <button>Send Message</button>
+  <div2>
+    <span2 class="fa fa-phone"></span2>0049 17661109008</p>
+    <span2 class="fa fa-envelope-o"></span2> contact@saldaeanalytics.com </p>
+  </div2>
 </form>
 
 
-
-:::puzzle
-My content goes in here!
-:::
+<!-- :::puzzle -->
+<!-- My content goes in here! -->
+<!-- ::: -->

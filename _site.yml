@@ -10,13 +10,14 @@ navbar:
     href: https://www.saldaeanalytics.com/
   search: true
   right:
-    - text: "Home"
+    - text: "Blog"
       href: index.html
-    - text: "About Us"
+    - text: "About"
       href: about.html
-    - text: "Contact Us"
-      href: contact.html
       css:  contact.css
+    - text: "Contact Us"
+      href: contact_us.html
+      
 output:
   distill::distill_article:
     css: styles.css
